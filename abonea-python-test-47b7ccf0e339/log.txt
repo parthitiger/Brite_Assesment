@@ -1,0 +1,1432 @@
+[2022-11-05 17:58:44 +0100] [30270] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 17:58:44 +0100] [30270] [INFO] Listening at: http://127.0.0.1:8000 (30270)
+[2022-11-05 17:58:44 +0100] [30270] [INFO] Using worker: sync
+[2022-11-05 17:58:44 +0100] [30272] [INFO] Booting worker with pid: 30272
+[2022-11-05 17:58:59 +0100] [30270] [INFO] Handling signal: int
+[2022-11-05 17:58:59 +0100] [30272] [INFO] Worker exiting (pid: 30272)
+[2022-11-05 17:59:00 +0100] [30270] [INFO] Shutting down: Master
+[2022-11-05 20:03:58 +0100] [34289] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 20:03:58 +0100] [34289] [INFO] Listening at: http://127.0.0.1:8000 (34289)
+[2022-11-05 20:03:58 +0100] [34289] [INFO] Using worker: sync
+[2022-11-05 20:03:58 +0100] [34293] [INFO] Booting worker with pid: 34293
+[2022-11-05 20:10:44 +0100] [34293] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/__init__.py modified
+[2022-11-05 20:10:45 +0100] [34293] [INFO] Worker exiting (pid: 34293)
+[2022-11-05 20:10:45 +0100] [34695] [INFO] Booting worker with pid: 34695
+[2022-11-05 20:10:45 +0100] [34695] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/__init__.py", line 1, in <module>
+    from api import application
+ModuleNotFoundError: No module named 'api'
+[2022-11-05 20:10:45 +0100] [34695] [INFO] Worker exiting (pid: 34695)
+[2022-11-05 20:10:45 +0100] [34289] [INFO] Shutting down: Master
+[2022-11-05 20:10:45 +0100] [34289] [INFO] Reason: Worker failed to boot.
+[2022-11-05 20:11:02 +0100] [34738] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 20:11:02 +0100] [34738] [INFO] Listening at: http://127.0.0.1:8000 (34738)
+[2022-11-05 20:11:02 +0100] [34738] [INFO] Using worker: sync
+[2022-11-05 20:11:02 +0100] [34740] [INFO] Booting worker with pid: 34740
+[2022-11-05 20:11:02 +0100] [34740] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/__init__.py", line 1, in <module>
+    from api import application
+ModuleNotFoundError: No module named 'api'
+[2022-11-05 20:11:02 +0100] [34740] [INFO] Worker exiting (pid: 34740)
+[2022-11-05 20:11:02 +0100] [34738] [INFO] Shutting down: Master
+[2022-11-05 20:11:02 +0100] [34738] [INFO] Reason: Worker failed to boot.
+[2022-11-05 20:11:53 +0100] [34811] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 20:11:53 +0100] [34811] [INFO] Listening at: http://127.0.0.1:8000 (34811)
+[2022-11-05 20:11:53 +0100] [34811] [INFO] Using worker: sync
+[2022-11-05 20:11:53 +0100] [34816] [INFO] Booting worker with pid: 34816
+[2022-11-05 20:11:53 +0100] [34816] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/__init__.py", line 1, in <module>
+    from api import application
+ModuleNotFoundError: No module named 'api'
+[2022-11-05 20:11:53 +0100] [34816] [INFO] Worker exiting (pid: 34816)
+[2022-11-05 20:11:53 +0100] [34811] [INFO] Shutting down: Master
+[2022-11-05 20:11:53 +0100] [34811] [INFO] Reason: Worker failed to boot.
+[2022-11-05 20:11:58 +0100] [34830] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 20:11:58 +0100] [34830] [INFO] Listening at: http://127.0.0.1:8000 (34830)
+[2022-11-05 20:11:58 +0100] [34830] [INFO] Using worker: sync
+[2022-11-05 20:11:58 +0100] [34832] [INFO] Booting worker with pid: 34832
+[2022-11-05 20:11:58 +0100] [34832] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/__init__.py", line 1, in <module>
+    from api import application
+ModuleNotFoundError: No module named 'api'
+[2022-11-05 20:11:58 +0100] [34832] [INFO] Worker exiting (pid: 34832)
+[2022-11-05 20:11:58 +0100] [34830] [INFO] Shutting down: Master
+[2022-11-05 20:11:58 +0100] [34830] [INFO] Reason: Worker failed to boot.
+[2022-11-05 20:12:29 +0100] [34873] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 20:12:29 +0100] [34873] [INFO] Listening at: http://127.0.0.1:8000 (34873)
+[2022-11-05 20:12:29 +0100] [34873] [INFO] Using worker: sync
+[2022-11-05 20:12:29 +0100] [34875] [INFO] Booting worker with pid: 34875
+[2022-11-05 20:23:55 +0100] [34875] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/__init__.py modified
+[2022-11-05 20:23:55 +0100] [34875] [INFO] Worker exiting (pid: 34875)
+[2022-11-05 20:23:55 +0100] [35173] [INFO] Booting worker with pid: 35173
+[2022-11-05 20:25:20 +0100] [35173] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 20:25:20 +0100] [35173] [INFO] Worker exiting (pid: 35173)
+[2022-11-05 20:25:20 +0100] [35271] [INFO] Booting worker with pid: 35271
+[2022-11-05 20:25:33 +0100] [35271] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 20:25:33 +0100] [35271] [INFO] Worker exiting (pid: 35271)
+[2022-11-05 20:25:34 +0100] [35284] [INFO] Booting worker with pid: 35284
+[2022-11-05 20:25:48 +0100] [35284] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 20:25:48 +0100] [35284] [INFO] Worker exiting (pid: 35284)
+[2022-11-05 20:25:48 +0100] [35296] [INFO] Booting worker with pid: 35296
+[2022-11-05 20:26:31 +0100] [35296] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 20:26:31 +0100] [35296] [INFO] Worker exiting (pid: 35296)
+[2022-11-05 20:26:32 +0100] [35348] [INFO] Booting worker with pid: 35348
+[2022-11-05 20:39:07 +0100] [35348] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py modified
+[2022-11-05 20:39:07 +0100] [35348] [INFO] Worker exiting (pid: 35348)
+[2022-11-05 20:39:08 +0100] [36007] [INFO] Booting worker with pid: 36007
+[2022-11-05 20:39:10 +0100] [36007] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py modified
+[2022-11-05 20:39:10 +0100] [36007] [INFO] Worker exiting (pid: 36007)
+[2022-11-05 20:39:11 +0100] [36011] [INFO] Booting worker with pid: 36011
+[2022-11-05 20:40:06 +0100] [36011] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py modified
+[2022-11-05 20:40:06 +0100] [36011] [INFO] Worker exiting (pid: 36011)
+[2022-11-05 20:40:06 +0100] [36077] [INFO] Booting worker with pid: 36077
+[2022-11-05 21:04:32 +0100] [34873] [CRITICAL] WORKER TIMEOUT (pid:36077)
+[2022-11-05 21:04:32 +0100] [36077] [INFO] Worker exiting (pid: 36077)
+[2022-11-05 21:04:33 +0100] [36323] [INFO] Booting worker with pid: 36323
+[2022-11-05 21:13:42 +0100] [36323] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/protorpc/wsgi/util.py modified
+[2022-11-05 21:13:42 +0100] [36323] [INFO] Worker exiting (pid: 36323)
+[2022-11-05 21:13:43 +0100] [36475] [INFO] Booting worker with pid: 36475
+[2022-11-05 21:13:45 +0100] [36475] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/protorpc/wsgi/util.py modified
+[2022-11-05 21:13:45 +0100] [36475] [INFO] Worker exiting (pid: 36475)
+[2022-11-05 21:13:45 +0100] [36481] [INFO] Booting worker with pid: 36481
+[2022-11-05 21:22:47 +0100] [34873] [INFO] Handling signal: int
+[2022-11-05 21:22:47 +0100] [36481] [INFO] Worker exiting (pid: 36481)
+[2022-11-05 21:22:47 +0100] [34873] [INFO] Shutting down: Master
+[2022-11-05 21:22:54 +0100] [36783] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 21:22:54 +0100] [36783] [INFO] Listening at: http://127.0.0.1:8000 (36783)
+[2022-11-05 21:22:54 +0100] [36783] [INFO] Using worker: sync
+[2022-11-05 21:22:54 +0100] [36795] [INFO] Booting worker with pid: 36795
+[2022-11-05 21:24:19 +0100] [36795] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py modified
+[2022-11-05 21:24:19 +0100] [36795] [INFO] Worker exiting (pid: 36795)
+[2022-11-05 21:24:19 +0100] [36879] [INFO] Booting worker with pid: 36879
+[2022-11-05 21:35:37 +0100] [36879] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py modified
+[2022-11-05 21:35:37 +0100] [36879] [INFO] Worker exiting (pid: 36879)
+[2022-11-05 21:35:37 +0100] [37271] [INFO] Booting worker with pid: 37271
+[2022-11-05 21:36:42 +0100] [37271] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py modified
+[2022-11-05 21:36:42 +0100] [37271] [INFO] Worker exiting (pid: 37271)
+[2022-11-05 21:36:42 +0100] [37337] [INFO] Booting worker with pid: 37337
+[2022-11-05 21:37:06 +0100] [37337] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py modified
+[2022-11-05 21:37:06 +0100] [37337] [INFO] Worker exiting (pid: 37337)
+[2022-11-05 21:37:07 +0100] [37365] [INFO] Booting worker with pid: 37365
+[2022-11-05 21:45:56 +0100] [37365] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:45:56 +0100] [37365] [INFO] Worker exiting (pid: 37365)
+[2022-11-05 21:45:56 +0100] [37741] [INFO] Booting worker with pid: 37741
+[2022-11-05 21:46:16 +0100] [37741] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:46:16 +0100] [37741] [INFO] Worker exiting (pid: 37741)
+[2022-11-05 21:46:16 +0100] [37761] [INFO] Booting worker with pid: 37761
+[2022-11-05 21:46:56 +0100] [37761] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:46:56 +0100] [37761] [INFO] Worker exiting (pid: 37761)
+[2022-11-05 21:46:57 +0100] [37771] [INFO] Booting worker with pid: 37771
+[2022-11-05 21:46:57 +0100] [37771] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 12, in <module>
+    print(application.app.base_path)
+AttributeError: 'function' object has no attribute 'base_path'
+[2022-11-05 21:46:57 +0100] [37771] [INFO] Worker exiting (pid: 37771)
+[2022-11-05 21:46:57 +0100] [36783] [INFO] Shutting down: Master
+[2022-11-05 21:46:57 +0100] [36783] [INFO] Reason: Worker failed to boot.
+[2022-11-05 21:47:06 +0100] [37782] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 21:47:06 +0100] [37782] [INFO] Listening at: http://127.0.0.1:8000 (37782)
+[2022-11-05 21:47:06 +0100] [37782] [INFO] Using worker: sync
+[2022-11-05 21:47:06 +0100] [37784] [INFO] Booting worker with pid: 37784
+[2022-11-05 21:47:29 +0100] [37784] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:47:29 +0100] [37784] [INFO] Worker exiting (pid: 37784)
+[2022-11-05 21:47:29 +0100] [37805] [INFO] Booting worker with pid: 37805
+[2022-11-05 21:47:59 +0100] [37805] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:47:59 +0100] [37805] [INFO] Worker exiting (pid: 37805)
+[2022-11-05 21:47:59 +0100] [37820] [INFO] Booting worker with pid: 37820
+[2022-11-05 21:48:02 +0100] [37820] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:48:02 +0100] [37820] [INFO] Worker exiting (pid: 37820)
+[2022-11-05 21:48:02 +0100] [37824] [INFO] Booting worker with pid: 37824
+[2022-11-05 21:48:15 +0100] [37824] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:48:15 +0100] [37824] [INFO] Worker exiting (pid: 37824)
+[2022-11-05 21:48:15 +0100] [37851] [INFO] Booting worker with pid: 37851
+[2022-11-05 21:49:38 +0100] [37851] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:49:38 +0100] [37851] [INFO] Worker exiting (pid: 37851)
+[2022-11-05 21:49:38 +0100] [37918] [INFO] Booting worker with pid: 37918
+[2022-11-05 21:49:44 +0100] [37918] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:49:44 +0100] [37918] [INFO] Worker exiting (pid: 37918)
+[2022-11-05 21:49:44 +0100] [37930] [INFO] Booting worker with pid: 37930
+[2022-11-05 21:49:47 +0100] [37930] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:49:47 +0100] [37930] [INFO] Worker exiting (pid: 37930)
+[2022-11-05 21:49:47 +0100] [37933] [INFO] Booting worker with pid: 37933
+[2022-11-05 21:49:49 +0100] [37933] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:49:49 +0100] [37933] [INFO] Worker exiting (pid: 37933)
+[2022-11-05 21:49:49 +0100] [37937] [INFO] Booting worker with pid: 37937
+[2022-11-05 21:50:34 +0100] [37937] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:50:34 +0100] [37937] [INFO] Worker exiting (pid: 37937)
+[2022-11-05 21:50:34 +0100] [37995] [INFO] Booting worker with pid: 37995
+[2022-11-05 21:50:44 +0100] [37995] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:50:44 +0100] [37995] [INFO] Worker exiting (pid: 37995)
+[2022-11-05 21:50:44 +0100] [38000] [INFO] Booting worker with pid: 38000
+[2022-11-05 21:51:29 +0100] [38000] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:51:29 +0100] [38000] [INFO] Worker exiting (pid: 38000)
+[2022-11-05 21:51:29 +0100] [38023] [INFO] Booting worker with pid: 38023
+[2022-11-05 21:51:29 +0100] [38023] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 15, in <module>
+    application.app = app
+AttributeError: can't set attribute
+[2022-11-05 21:51:29 +0100] [38023] [INFO] Worker exiting (pid: 38023)
+[2022-11-05 21:51:29 +0100] [37782] [INFO] Shutting down: Master
+[2022-11-05 21:51:29 +0100] [37782] [INFO] Reason: Worker failed to boot.
+[2022-11-05 21:54:29 +0100] [38198] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 21:54:29 +0100] [38198] [INFO] Listening at: http://127.0.0.1:8000 (38198)
+[2022-11-05 21:54:29 +0100] [38198] [INFO] Using worker: sync
+[2022-11-05 21:54:29 +0100] [38201] [INFO] Booting worker with pid: 38201
+[2022-11-05 21:54:30 +0100] [38201] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 16, in <module>
+    application.app = app
+AttributeError: can't set attribute
+[2022-11-05 21:54:30 +0100] [38201] [INFO] Worker exiting (pid: 38201)
+[2022-11-05 21:54:30 +0100] [38198] [INFO] Shutting down: Master
+[2022-11-05 21:54:30 +0100] [38198] [INFO] Reason: Worker failed to boot.
+[2022-11-05 21:54:52 +0100] [38226] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 21:54:52 +0100] [38226] [INFO] Listening at: http://127.0.0.1:8000 (38226)
+[2022-11-05 21:54:52 +0100] [38226] [INFO] Using worker: sync
+[2022-11-05 21:54:52 +0100] [38228] [INFO] Booting worker with pid: 38228
+[2022-11-05 21:55:14 +0100] [38228] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:55:14 +0100] [38228] [INFO] Worker exiting (pid: 38228)
+[2022-11-05 21:55:15 +0100] [38250] [INFO] Booting worker with pid: 38250
+[2022-11-05 21:55:39 +0100] [38250] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py modified
+[2022-11-05 21:55:39 +0100] [38250] [INFO] Worker exiting (pid: 38250)
+[2022-11-05 21:55:39 +0100] [38262] [INFO] Booting worker with pid: 38262
+[2022-11-05 22:04:30 +0100] [38262] [ERROR] Error handling request /api/movies?id=1
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 136, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 28, in application
+    response = api_application(environ, start_response)
+TypeError: __call__() takes 1 positional argument but 3 were given
+[2022-11-05 22:04:35 +0100] [38262] [ERROR] Error handling request /api/movies?id=1
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 136, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 28, in application
+    response = api_application(environ, start_response)
+TypeError: __call__() takes 1 positional argument but 3 were given
+[2022-11-05 22:05:01 +0100] [38226] [INFO] Handling signal: int
+[2022-11-05 22:05:01 +0100] [38262] [INFO] Worker exiting (pid: 38262)
+[2022-11-05 22:05:01 +0100] [38226] [INFO] Shutting down: Master
+[2022-11-05 22:05:03 +0100] [38537] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 22:05:03 +0100] [38537] [INFO] Listening at: http://127.0.0.1:8000 (38537)
+[2022-11-05 22:05:03 +0100] [38537] [INFO] Using worker: sync
+[2022-11-05 22:05:03 +0100] [38539] [INFO] Booting worker with pid: 38539
+[2022-11-05 22:05:06 +0100] [38539] [ERROR] Error handling request /api/movies?id=1
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 136, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 28, in application
+    response = api_application(environ, start_response)
+TypeError: __call__() takes 1 positional argument but 3 were given
+[2022-11-05 22:05:07 +0100] [38539] [ERROR] Error handling request /api/movies?id=1
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 136, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 28, in application
+    response = api_application(environ, start_response)
+TypeError: __call__() takes 1 positional argument but 3 were given
+[2022-11-05 22:05:07 +0100] [38539] [ERROR] Error handling request /api/movies?id=1
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 136, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 28, in application
+    response = api_application(environ, start_response)
+TypeError: __call__() takes 1 positional argument but 3 were given
+[2022-11-05 22:05:10 +0100] [38539] [ERROR] Error handling request /api/user?id=1
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 136, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 28, in application
+    response = api_application(environ, start_response)
+TypeError: __call__() takes 1 positional argument but 3 were given
+[2022-11-05 22:05:13 +0100] [38539] [ERROR] Error handling request /api/user
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 136, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 28, in application
+    response = api_application(environ, start_response)
+TypeError: __call__() takes 1 positional argument but 3 were given
+[2022-11-05 22:05:19 +0100] [38537] [INFO] Handling signal: int
+[2022-11-05 22:05:19 +0100] [38539] [INFO] Worker exiting (pid: 38539)
+[2022-11-05 22:05:19 +0100] [38537] [INFO] Shutting down: Master
+[2022-11-05 22:05:56 +0100] [38585] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 22:05:56 +0100] [38585] [INFO] Listening at: http://127.0.0.1:8000 (38585)
+[2022-11-05 22:05:56 +0100] [38585] [INFO] Using worker: sync
+[2022-11-05 22:05:56 +0100] [38587] [INFO] Booting worker with pid: 38587
+[2022-11-05 22:14:28 +0100] [38587] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/__init__.py modified
+[2022-11-05 22:14:28 +0100] [38587] [INFO] Worker exiting (pid: 38587)
+[2022-11-05 22:14:28 +0100] [38895] [INFO] Booting worker with pid: 38895
+[2022-11-05 22:18:57 +0100] [38895] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/protorpc/wsgi/service.py modified
+[2022-11-05 22:18:57 +0100] [38895] [INFO] Worker exiting (pid: 38895)
+[2022-11-05 22:18:57 +0100] [39106] [INFO] Booting worker with pid: 39106
+[2022-11-05 22:20:26 +0100] [39106] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/protorpc/wsgi/service.py modified
+[2022-11-05 22:20:26 +0100] [39106] [INFO] Worker exiting (pid: 39106)
+[2022-11-05 22:20:26 +0100] [39157] [INFO] Booting worker with pid: 39157
+[2022-11-05 22:27:25 +0100] [39157] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py modified
+[2022-11-05 22:27:25 +0100] [39157] [INFO] Worker exiting (pid: 39157)
+[2022-11-05 22:27:25 +0100] [39440] [INFO] Booting worker with pid: 39440
+[2022-11-05 22:27:25 +0100] [39440] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 14, in <module>
+    class api:
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 36, in api
+    def get(id):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 449, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/app.py", line 1358, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: get
+[2022-11-05 22:27:25 +0100] [39440] [INFO] Worker exiting (pid: 39440)
+[2022-11-05 22:27:25 +0100] [38585] [INFO] Shutting down: Master
+[2022-11-05 22:27:25 +0100] [38585] [INFO] Reason: Worker failed to boot.
+[2022-11-05 22:29:47 +0100] [39548] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 22:29:47 +0100] [39548] [INFO] Listening at: http://127.0.0.1:8000 (39548)
+[2022-11-05 22:29:47 +0100] [39548] [INFO] Using worker: sync
+[2022-11-05 22:29:47 +0100] [39550] [INFO] Booting worker with pid: 39550
+[2022-11-05 22:29:48 +0100] [39550] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 14, in <module>
+    class api:
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 36, in api
+    def get(id):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 449, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/app.py", line 1358, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: get
+[2022-11-05 22:29:48 +0100] [39550] [INFO] Worker exiting (pid: 39550)
+[2022-11-05 22:29:48 +0100] [39548] [INFO] Shutting down: Master
+[2022-11-05 22:29:48 +0100] [39548] [INFO] Reason: Worker failed to boot.
+[2022-11-05 22:31:36 +0100] [39613] [INFO] Starting gunicorn 20.1.0
+[2022-11-05 22:31:36 +0100] [39613] [INFO] Listening at: http://127.0.0.1:8000 (39613)
+[2022-11-05 22:31:36 +0100] [39613] [INFO] Using worker: sync
+[2022-11-05 22:31:36 +0100] [39615] [INFO] Booting worker with pid: 39615
+[2022-11-05 22:53:18 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:39615)
+[2022-11-05 22:53:18 +0100] [39615] [INFO] Worker exiting (pid: 39615)
+[2022-11-05 22:53:19 +0100] [39915] [INFO] Booting worker with pid: 39915
+[2022-11-05 23:10:56 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:39915)
+[2022-11-05 23:10:56 +0100] [39915] [INFO] Worker exiting (pid: 39915)
+[2022-11-05 23:10:56 +0100] [39937] [INFO] Booting worker with pid: 39937
+[2022-11-05 23:28:02 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:39937)
+[2022-11-05 23:28:03 +0100] [39937] [INFO] Worker exiting (pid: 39937)
+[2022-11-05 23:28:03 +0100] [39963] [INFO] Booting worker with pid: 39963
+[2022-11-05 23:45:05 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:39963)
+[2022-11-05 23:45:05 +0100] [39963] [INFO] Worker exiting (pid: 39963)
+[2022-11-05 23:45:05 +0100] [39978] [INFO] Booting worker with pid: 39978
+[2022-11-06 00:02:28 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:39978)
+[2022-11-06 00:02:28 +0100] [39978] [INFO] Worker exiting (pid: 39978)
+[2022-11-06 00:02:28 +0100] [40006] [INFO] Booting worker with pid: 40006
+[2022-11-06 00:17:43 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40006)
+[2022-11-06 00:17:43 +0100] [40006] [INFO] Worker exiting (pid: 40006)
+[2022-11-06 00:17:43 +0100] [40050] [INFO] Booting worker with pid: 40050
+[2022-11-06 00:33:00 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40050)
+[2022-11-06 00:33:00 +0100] [40050] [INFO] Worker exiting (pid: 40050)
+[2022-11-06 00:33:00 +0100] [40058] [INFO] Booting worker with pid: 40058
+[2022-11-06 00:49:15 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40058)
+[2022-11-06 00:49:15 +0100] [40058] [INFO] Worker exiting (pid: 40058)
+[2022-11-06 00:49:15 +0100] [40064] [INFO] Booting worker with pid: 40064
+[2022-11-06 01:04:51 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40064)
+[2022-11-06 01:04:51 +0100] [40064] [INFO] Worker exiting (pid: 40064)
+[2022-11-06 01:04:51 +0100] [40073] [INFO] Booting worker with pid: 40073
+[2022-11-06 01:22:14 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40073)
+[2022-11-06 01:22:14 +0100] [40073] [INFO] Worker exiting (pid: 40073)
+[2022-11-06 01:22:14 +0100] [40078] [INFO] Booting worker with pid: 40078
+[2022-11-06 01:37:59 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40078)
+[2022-11-06 01:37:59 +0100] [40078] [INFO] Worker exiting (pid: 40078)
+[2022-11-06 01:37:59 +0100] [40089] [INFO] Booting worker with pid: 40089
+[2022-11-06 01:54:34 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40089)
+[2022-11-06 01:54:34 +0100] [40089] [INFO] Worker exiting (pid: 40089)
+[2022-11-06 01:54:34 +0100] [40097] [INFO] Booting worker with pid: 40097
+[2022-11-06 02:10:43 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40097)
+[2022-11-06 02:10:43 +0100] [40097] [INFO] Worker exiting (pid: 40097)
+[2022-11-06 02:10:43 +0100] [40124] [INFO] Booting worker with pid: 40124
+[2022-11-06 02:27:29 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40124)
+[2022-11-06 02:27:29 +0100] [40124] [INFO] Worker exiting (pid: 40124)
+[2022-11-06 02:27:30 +0100] [40130] [INFO] Booting worker with pid: 40130
+[2022-11-06 02:43:54 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40130)
+[2022-11-06 02:43:54 +0100] [40130] [INFO] Worker exiting (pid: 40130)
+[2022-11-06 02:43:54 +0100] [40138] [INFO] Booting worker with pid: 40138
+[2022-11-06 03:08:35 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40138)
+[2022-11-06 03:08:35 +0100] [40138] [INFO] Worker exiting (pid: 40138)
+[2022-11-06 03:08:36 +0100] [40184] [INFO] Booting worker with pid: 40184
+[2022-11-06 03:26:20 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40184)
+[2022-11-06 03:26:20 +0100] [40184] [INFO] Worker exiting (pid: 40184)
+[2022-11-06 03:26:20 +0100] [40214] [INFO] Booting worker with pid: 40214
+[2022-11-06 03:44:05 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40214)
+[2022-11-06 03:44:05 +0100] [40214] [INFO] Worker exiting (pid: 40214)
+[2022-11-06 03:44:05 +0100] [40249] [INFO] Booting worker with pid: 40249
+[2022-11-06 04:00:25 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40249)
+[2022-11-06 04:00:25 +0100] [40249] [INFO] Worker exiting (pid: 40249)
+[2022-11-06 04:00:25 +0100] [40277] [INFO] Booting worker with pid: 40277
+[2022-11-06 04:15:37 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40277)
+[2022-11-06 04:15:37 +0100] [40277] [INFO] Worker exiting (pid: 40277)
+[2022-11-06 04:15:37 +0100] [40307] [INFO] Booting worker with pid: 40307
+[2022-11-06 04:33:39 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40307)
+[2022-11-06 04:33:39 +0100] [40307] [INFO] Worker exiting (pid: 40307)
+[2022-11-06 04:33:39 +0100] [40312] [INFO] Booting worker with pid: 40312
+[2022-11-06 04:49:17 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40312)
+[2022-11-06 04:49:17 +0100] [40312] [INFO] Worker exiting (pid: 40312)
+[2022-11-06 04:49:17 +0100] [40318] [INFO] Booting worker with pid: 40318
+[2022-11-06 05:04:55 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40318)
+[2022-11-06 05:04:55 +0100] [40318] [INFO] Worker exiting (pid: 40318)
+[2022-11-06 05:04:55 +0100] [40323] [INFO] Booting worker with pid: 40323
+[2022-11-06 05:22:11 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40323)
+[2022-11-06 05:22:11 +0100] [40323] [INFO] Worker exiting (pid: 40323)
+[2022-11-06 05:22:11 +0100] [40330] [INFO] Booting worker with pid: 40330
+[2022-11-06 05:38:48 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40330)
+[2022-11-06 05:38:48 +0100] [40330] [INFO] Worker exiting (pid: 40330)
+[2022-11-06 05:38:48 +0100] [40342] [INFO] Booting worker with pid: 40342
+[2022-11-06 05:55:53 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40342)
+[2022-11-06 05:55:53 +0100] [40342] [INFO] Worker exiting (pid: 40342)
+[2022-11-06 05:55:53 +0100] [40348] [INFO] Booting worker with pid: 40348
+[2022-11-06 06:11:45 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40348)
+[2022-11-06 06:11:45 +0100] [40348] [INFO] Worker exiting (pid: 40348)
+[2022-11-06 06:11:45 +0100] [40356] [INFO] Booting worker with pid: 40356
+[2022-11-06 06:27:27 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40356)
+[2022-11-06 06:27:27 +0100] [40356] [INFO] Worker exiting (pid: 40356)
+[2022-11-06 06:27:27 +0100] [40363] [INFO] Booting worker with pid: 40363
+[2022-11-06 06:44:49 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40363)
+[2022-11-06 06:44:49 +0100] [40363] [INFO] Worker exiting (pid: 40363)
+[2022-11-06 06:44:49 +0100] [40370] [INFO] Booting worker with pid: 40370
+[2022-11-06 07:00:51 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40370)
+[2022-11-06 07:00:51 +0100] [40370] [INFO] Worker exiting (pid: 40370)
+[2022-11-06 07:00:51 +0100] [40377] [INFO] Booting worker with pid: 40377
+[2022-11-06 07:16:48 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40377)
+[2022-11-06 07:16:48 +0100] [40377] [INFO] Worker exiting (pid: 40377)
+[2022-11-06 07:16:48 +0100] [40398] [INFO] Booting worker with pid: 40398
+[2022-11-06 07:32:23 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40398)
+[2022-11-06 07:32:23 +0100] [40398] [INFO] Worker exiting (pid: 40398)
+[2022-11-06 07:32:23 +0100] [40406] [INFO] Booting worker with pid: 40406
+[2022-11-06 07:48:00 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40406)
+[2022-11-06 07:48:00 +0100] [40406] [INFO] Worker exiting (pid: 40406)
+[2022-11-06 07:48:00 +0100] [40422] [INFO] Booting worker with pid: 40422
+[2022-11-06 08:05:46 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40422)
+[2022-11-06 08:05:46 +0100] [40422] [INFO] Worker exiting (pid: 40422)
+[2022-11-06 08:05:46 +0100] [40429] [INFO] Booting worker with pid: 40429
+[2022-11-06 08:20:52 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40429)
+[2022-11-06 08:20:52 +0100] [40429] [INFO] Worker exiting (pid: 40429)
+[2022-11-06 08:20:52 +0100] [40434] [INFO] Booting worker with pid: 40434
+[2022-11-06 08:36:38 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40434)
+[2022-11-06 08:36:38 +0100] [40434] [INFO] Worker exiting (pid: 40434)
+[2022-11-06 08:36:38 +0100] [40451] [INFO] Booting worker with pid: 40451
+[2022-11-06 08:54:08 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40451)
+[2022-11-06 08:54:08 +0100] [40451] [INFO] Worker exiting (pid: 40451)
+[2022-11-06 08:54:09 +0100] [40489] [INFO] Booting worker with pid: 40489
+[2022-11-06 09:11:55 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40489)
+[2022-11-06 09:11:55 +0100] [40489] [INFO] Worker exiting (pid: 40489)
+[2022-11-06 09:11:55 +0100] [40508] [INFO] Booting worker with pid: 40508
+[2022-11-06 09:27:28 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40508)
+[2022-11-06 09:27:28 +0100] [40508] [INFO] Worker exiting (pid: 40508)
+[2022-11-06 09:27:28 +0100] [40524] [INFO] Booting worker with pid: 40524
+[2022-11-06 09:44:22 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40524)
+[2022-11-06 09:44:22 +0100] [40524] [INFO] Worker exiting (pid: 40524)
+[2022-11-06 09:44:22 +0100] [40532] [INFO] Booting worker with pid: 40532
+[2022-11-06 10:01:04 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40532)
+[2022-11-06 10:01:04 +0100] [40532] [INFO] Worker exiting (pid: 40532)
+[2022-11-06 10:01:04 +0100] [40539] [INFO] Booting worker with pid: 40539
+[2022-11-06 10:17:12 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40539)
+[2022-11-06 10:17:12 +0100] [40539] [INFO] Worker exiting (pid: 40539)
+[2022-11-06 10:17:12 +0100] [40546] [INFO] Booting worker with pid: 40546
+[2022-11-06 10:34:40 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40546)
+[2022-11-06 10:34:40 +0100] [40546] [INFO] Worker exiting (pid: 40546)
+[2022-11-06 10:34:40 +0100] [40552] [INFO] Booting worker with pid: 40552
+[2022-11-06 10:52:03 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40552)
+[2022-11-06 10:52:03 +0100] [40552] [INFO] Worker exiting (pid: 40552)
+[2022-11-06 10:52:04 +0100] [40558] [INFO] Booting worker with pid: 40558
+[2022-11-06 11:09:48 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40558)
+[2022-11-06 11:09:48 +0100] [40558] [INFO] Worker exiting (pid: 40558)
+[2022-11-06 11:09:48 +0100] [40561] [INFO] Booting worker with pid: 40561
+[2022-11-06 11:23:12 +0100] [39613] [CRITICAL] WORKER TIMEOUT (pid:40561)
+[2022-11-06 11:23:12 +0100] [40561] [INFO] Worker exiting (pid: 40561)
+[2022-11-06 11:23:13 +0100] [40571] [INFO] Booting worker with pid: 40571
+[2022-11-06 12:14:00 +0100] [39613] [INFO] Handling signal: winch
+[2022-11-06 12:14:05 +0100] [39613] [INFO] Handling signal: int
+[2022-11-06 12:14:05 +0100] [40571] [INFO] Worker exiting (pid: 40571)
+[2022-11-06 12:14:06 +0100] [39613] [INFO] Shutting down: Master
+[2022-11-06 12:20:41 +0100] [42072] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:20:41 +0100] [42072] [INFO] Listening at: http://127.0.0.1:8000 (42072)
+[2022-11-06 12:20:41 +0100] [42072] [INFO] Using worker: sync
+[2022-11-06 12:20:41 +0100] [42074] [INFO] Booting worker with pid: 42074
+[2022-11-06 12:20:42 +0100] [42074] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 2, in <module>
+    from flask_restful import Api, Resource
+ModuleNotFoundError: No module named 'flask_restful'
+[2022-11-06 12:20:42 +0100] [42074] [INFO] Worker exiting (pid: 42074)
+[2022-11-06 12:20:42 +0100] [42072] [INFO] Shutting down: Master
+[2022-11-06 12:20:42 +0100] [42072] [INFO] Reason: Worker failed to boot.
+[2022-11-06 12:21:05 +0100] [42119] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:21:05 +0100] [42119] [INFO] Listening at: http://127.0.0.1:8000 (42119)
+[2022-11-06 12:21:05 +0100] [42119] [INFO] Using worker: sync
+[2022-11-06 12:21:05 +0100] [42121] [INFO] Booting worker with pid: 42121
+[2022-11-06 12:21:06 +0100] [42121] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 18, in <module>
+    api.add_resource(Movies, '/movies/<int:id>/')
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 391, in add_resource
+    self._register_view(self.app, resource, *urls, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 457, in _register_view
+    app.add_url_rule(rule, view_func=resource_func, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/app.py", line 1358, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: movies
+[2022-11-06 12:21:06 +0100] [42121] [INFO] Worker exiting (pid: 42121)
+[2022-11-06 12:21:06 +0100] [42119] [INFO] Shutting down: Master
+[2022-11-06 12:21:06 +0100] [42119] [INFO] Reason: Worker failed to boot.
+[2022-11-06 12:22:37 +0100] [42173] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:22:37 +0100] [42173] [INFO] Listening at: http://127.0.0.1:8000 (42173)
+[2022-11-06 12:22:37 +0100] [42173] [INFO] Using worker: sync
+[2022-11-06 12:22:37 +0100] [42176] [INFO] Booting worker with pid: 42176
+[2022-11-06 12:22:37 +0100] [42176] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 19, in <module>
+    api.add_resource(Movies, '/movies/<int:id>/')
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 391, in add_resource
+    self._register_view(self.app, resource, *urls, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 457, in _register_view
+    app.add_url_rule(rule, view_func=resource_func, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/app.py", line 1358, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: movies
+[2022-11-06 12:22:37 +0100] [42176] [INFO] Worker exiting (pid: 42176)
+[2022-11-06 12:22:37 +0100] [42173] [INFO] Shutting down: Master
+[2022-11-06 12:22:37 +0100] [42173] [INFO] Reason: Worker failed to boot.
+[2022-11-06 12:24:06 +0100] [42225] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:24:06 +0100] [42225] [INFO] Listening at: http://127.0.0.1:8000 (42225)
+[2022-11-06 12:24:06 +0100] [42225] [INFO] Using worker: sync
+[2022-11-06 12:24:06 +0100] [42227] [INFO] Booting worker with pid: 42227
+[2022-11-06 12:24:07 +0100] [42227] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 19, in <module>
+    api.add_resource(Movies, '/movies/<int:id>/')
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 391, in add_resource
+    self._register_view(self.app, resource, *urls, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 457, in _register_view
+    app.add_url_rule(rule, view_func=resource_func, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/app.py", line 1358, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: movies
+[2022-11-06 12:24:07 +0100] [42227] [INFO] Worker exiting (pid: 42227)
+[2022-11-06 12:24:07 +0100] [42225] [INFO] Shutting down: Master
+[2022-11-06 12:24:07 +0100] [42225] [INFO] Reason: Worker failed to boot.
+[2022-11-06 12:24:38 +0100] [42268] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:24:38 +0100] [42268] [INFO] Listening at: http://127.0.0.1:8000 (42268)
+[2022-11-06 12:24:38 +0100] [42268] [INFO] Using worker: sync
+[2022-11-06 12:24:38 +0100] [42270] [INFO] Booting worker with pid: 42270
+[2022-11-06 12:24:38 +0100] [42270] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 19, in <module>
+    api.add_resource(flims, '/movies/<int:id>/')
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 391, in add_resource
+    self._register_view(self.app, resource, *urls, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 457, in _register_view
+    app.add_url_rule(rule, view_func=resource_func, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/app.py", line 1358, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: flims
+[2022-11-06 12:24:38 +0100] [42270] [INFO] Worker exiting (pid: 42270)
+[2022-11-06 12:24:38 +0100] [42268] [INFO] Shutting down: Master
+[2022-11-06 12:24:38 +0100] [42268] [INFO] Reason: Worker failed to boot.
+[2022-11-06 12:27:47 +0100] [42438] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:27:47 +0100] [42438] [INFO] Listening at: http://127.0.0.1:8000 (42438)
+[2022-11-06 12:27:47 +0100] [42438] [INFO] Using worker: sync
+[2022-11-06 12:27:47 +0100] [42440] [INFO] Booting worker with pid: 42440
+[2022-11-06 12:28:06 +0100] [42440] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py modified
+[2022-11-06 12:28:06 +0100] [42440] [INFO] Worker exiting (pid: 42440)
+[2022-11-06 12:28:06 +0100] [42459] [INFO] Booting worker with pid: 42459
+[2022-11-06 12:28:06 +0100] [42459] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 18, in <module>
+    api.add_resource(flims, 'api/movies/<int:id>/')
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 391, in add_resource
+    self._register_view(self.app, resource, *urls, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 457, in _register_view
+    app.add_url_rule(rule, view_func=resource_func, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/app.py", line 1351, in add_url_rule
+    rule = self.url_rule_class(rule, methods=methods, **options)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 454, in __init__
+    raise ValueError("urls must start with a leading slash")
+ValueError: urls must start with a leading slash
+[2022-11-06 12:28:06 +0100] [42459] [INFO] Worker exiting (pid: 42459)
+[2022-11-06 12:28:06 +0100] [42438] [INFO] Shutting down: Master
+[2022-11-06 12:28:06 +0100] [42438] [INFO] Reason: Worker failed to boot.
+[2022-11-06 12:28:13 +0100] [42465] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:28:13 +0100] [42465] [INFO] Listening at: http://127.0.0.1:8000 (42465)
+[2022-11-06 12:28:13 +0100] [42465] [INFO] Using worker: sync
+[2022-11-06 12:28:13 +0100] [42467] [INFO] Booting worker with pid: 42467
+[2022-11-06 12:28:13 +0100] [42467] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 18, in <module>
+    api.add_resource(flims, 'api/movies/<int:id>/')
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 391, in add_resource
+    self._register_view(self.app, resource, *urls, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask_restful/__init__.py", line 457, in _register_view
+    app.add_url_rule(rule, view_func=resource_func, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/flask/app.py", line 1351, in add_url_rule
+    rule = self.url_rule_class(rule, methods=methods, **options)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 454, in __init__
+    raise ValueError("urls must start with a leading slash")
+ValueError: urls must start with a leading slash
+[2022-11-06 12:28:13 +0100] [42467] [INFO] Worker exiting (pid: 42467)
+[2022-11-06 12:28:13 +0100] [42465] [INFO] Shutting down: Master
+[2022-11-06 12:28:13 +0100] [42465] [INFO] Reason: Worker failed to boot.
+[2022-11-06 12:28:34 +0100] [42508] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:28:34 +0100] [42508] [INFO] Listening at: http://127.0.0.1:8000 (42508)
+[2022-11-06 12:28:34 +0100] [42508] [INFO] Using worker: sync
+[2022-11-06 12:28:34 +0100] [42510] [INFO] Booting worker with pid: 42510
+[2022-11-06 13:10:09 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:42510)
+[2022-11-06 13:10:09 +0100] [42510] [INFO] Worker exiting (pid: 42510)
+[2022-11-06 13:10:10 +0100] [42508] [WARNING] Worker with pid 42510 was terminated due to signal 9
+[2022-11-06 13:10:10 +0100] [43394] [INFO] Booting worker with pid: 43394
+[2022-11-06 13:22:23 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:43394)
+[2022-11-06 13:22:23 +0100] [43394] [INFO] Worker exiting (pid: 43394)
+[2022-11-06 13:22:23 +0100] [43518] [INFO] Booting worker with pid: 43518
+[2022-11-06 13:40:21 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:43518)
+[2022-11-06 13:40:21 +0100] [43518] [INFO] Worker exiting (pid: 43518)
+[2022-11-06 13:40:21 +0100] [43588] [INFO] Booting worker with pid: 43588
+[2022-11-06 13:57:32 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:43588)
+[2022-11-06 13:57:32 +0100] [43588] [INFO] Worker exiting (pid: 43588)
+[2022-11-06 13:57:33 +0100] [43616] [INFO] Booting worker with pid: 43616
+[2022-11-06 14:14:18 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:43616)
+[2022-11-06 14:14:18 +0100] [43616] [INFO] Worker exiting (pid: 43616)
+[2022-11-06 14:14:19 +0100] [43670] [INFO] Booting worker with pid: 43670
+[2022-11-06 15:31:53 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:43670)
+[2022-11-06 15:31:53 +0100] [43670] [INFO] Worker exiting (pid: 43670)
+[2022-11-06 15:31:54 +0100] [42508] [WARNING] Worker with pid 43670 was terminated due to signal 9
+[2022-11-06 15:31:55 +0100] [45172] [INFO] Booting worker with pid: 45172
+[2022-11-06 16:34:31 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:45172)
+[2022-11-06 16:34:31 +0100] [45172] [INFO] Worker exiting (pid: 45172)
+[2022-11-06 16:34:32 +0100] [46482] [INFO] Booting worker with pid: 46482
+[2022-11-06 16:51:55 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:46482)
+[2022-11-06 16:51:55 +0100] [46482] [INFO] Worker exiting (pid: 46482)
+[2022-11-06 16:51:55 +0100] [46502] [INFO] Booting worker with pid: 46502
+[2022-11-06 17:08:54 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:46502)
+[2022-11-06 17:08:54 +0100] [46502] [INFO] Worker exiting (pid: 46502)
+[2022-11-06 17:08:54 +0100] [46517] [INFO] Booting worker with pid: 46517
+[2022-11-06 17:24:08 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:46517)
+[2022-11-06 17:24:08 +0100] [46517] [INFO] Worker exiting (pid: 46517)
+[2022-11-06 17:24:08 +0100] [46522] [INFO] Booting worker with pid: 46522
+[2022-11-06 17:42:01 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:46522)
+[2022-11-06 17:42:01 +0100] [46522] [INFO] Worker exiting (pid: 46522)
+[2022-11-06 17:42:01 +0100] [46537] [INFO] Booting worker with pid: 46537
+[2022-11-06 17:54:02 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:46537)
+[2022-11-06 17:54:02 +0100] [46537] [INFO] Worker exiting (pid: 46537)
+[2022-11-06 17:54:02 +0100] [46548] [INFO] Booting worker with pid: 46548
+[2022-11-06 18:22:51 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:46548)
+[2022-11-06 18:22:51 +0100] [46548] [INFO] Worker exiting (pid: 46548)
+[2022-11-06 18:22:53 +0100] [47182] [INFO] Booting worker with pid: 47182
+[2022-11-06 18:40:53 +0100] [42508] [CRITICAL] WORKER TIMEOUT (pid:47182)
+[2022-11-06 18:40:53 +0100] [47182] [INFO] Worker exiting (pid: 47182)
+[2022-11-06 18:40:53 +0100] [47187] [INFO] Booting worker with pid: 47187
+[2022-11-06 18:47:56 +0100] [42508] [INFO] Handling signal: int
+[2022-11-06 18:47:56 +0100] [47187] [INFO] Worker exiting (pid: 47187)
+[2022-11-06 18:47:57 +0100] [42508] [INFO] Shutting down: Master
+[2022-11-06 18:48:00 +0100] [47379] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 18:48:00 +0100] [47379] [INFO] Listening at: http://127.0.0.1:8000 (47379)
+[2022-11-06 18:48:00 +0100] [47379] [INFO] Using worker: sync
+[2022-11-06 18:48:00 +0100] [47382] [INFO] Booting worker with pid: 47382
+[2022-11-06 18:57:39 +0100] [47382] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/__init__.py modified
+[2022-11-06 18:57:39 +0100] [47382] [INFO] Worker exiting (pid: 47382)
+[2022-11-06 18:57:40 +0100] [47757] [INFO] Booting worker with pid: 47757
+[2022-11-06 18:57:53 +0100] [47757] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/__init__.py modified
+[2022-11-06 18:57:53 +0100] [47757] [INFO] Worker exiting (pid: 47757)
+[2022-11-06 18:57:53 +0100] [47765] [INFO] Booting worker with pid: 47765
+[2022-11-06 19:05:58 +0100] [47765] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py modified
+[2022-11-06 19:05:58 +0100] [47765] [INFO] Worker exiting (pid: 47765)
+[2022-11-06 19:05:58 +0100] [47998] [INFO] Booting worker with pid: 47998
+[2022-11-06 19:05:59 +0100] [47998] [ERROR] invalid syntax (movies.py, line 85)
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 25, in <module>
+    __import__(modname)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py", line 85
+    id='1',
+    ^
+SyntaxError: invalid syntax
+[2022-11-06 19:06:01 +0100] [47998] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py modified
+[2022-11-06 19:06:01 +0100] [47998] [INFO] Worker exiting (pid: 47998)
+[2022-11-06 19:06:01 +0100] [48004] [INFO] Booting worker with pid: 48004
+[2022-11-06 19:06:01 +0100] [48004] [ERROR] invalid syntax (movies.py, line 85)
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 25, in <module>
+    __import__(modname)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py", line 85
+    id='1',
+    ^
+SyntaxError: invalid syntax
+[2022-11-06 19:07:43 +0100] [48004] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py modified
+[2022-11-06 19:07:43 +0100] [48004] [INFO] Worker exiting (pid: 48004)
+[2022-11-06 19:07:43 +0100] [48040] [INFO] Booting worker with pid: 48040
+[2022-11-06 19:07:43 +0100] [48040] [ERROR] invalid syntax (movies.py, line 78)
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 25, in <module>
+    __import__(modname)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py", line 78
+    id='1',
+    ^
+SyntaxError: invalid syntax
+[2022-11-06 19:07:54 +0100] [48040] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py modified
+[2022-11-06 19:07:54 +0100] [48040] [INFO] Worker exiting (pid: 48040)
+[2022-11-06 19:07:54 +0100] [48047] [INFO] Booting worker with pid: 48047
+[2022-11-06 19:07:55 +0100] [48047] [ERROR] invalid syntax (movies.py, line 78)
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 25, in <module>
+    __import__(modname)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py", line 78
+    id='1',
+    ^
+SyntaxError: invalid syntax
+[2022-11-06 19:12:07 +0100] [48047] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py modified
+[2022-11-06 19:12:07 +0100] [48047] [INFO] Worker exiting (pid: 48047)
+[2022-11-06 19:12:07 +0100] [48143] [INFO] Booting worker with pid: 48143
+[2022-11-06 19:12:07 +0100] [48143] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 25, in <module>
+    __import__(modname)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py", line 11, in <module>
+    class CreateRequest(messages.Message):
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/protorpc/messages.py", line 611, in __new__
+    raise DuplicateNumberError(
+backend.wsgi.protorpc.messages.DuplicateNumberError: Field with number 15 declared more than once in CreateRequest
+[2022-11-06 19:12:07 +0100] [48143] [INFO] Worker exiting (pid: 48143)
+[2022-11-06 19:12:08 +0100] [47379] [INFO] Shutting down: Master
+[2022-11-06 19:12:08 +0100] [47379] [INFO] Reason: Worker failed to boot.
+[2022-11-06 19:22:00 +0100] [48394] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 19:22:00 +0100] [48394] [INFO] Listening at: http://127.0.0.1:8000 (48394)
+[2022-11-06 19:22:00 +0100] [48394] [INFO] Using worker: sync
+[2022-11-06 19:22:00 +0100] [48396] [INFO] Booting worker with pid: 48396
+[2022-11-06 19:22:00 +0100] [48396] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 25, in <module>
+    __import__(modname)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py", line 11, in <module>
+    class CreateRequest(messages.Message):
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/protorpc/messages.py", line 611, in __new__
+    raise DuplicateNumberError(
+backend.wsgi.protorpc.messages.DuplicateNumberError: Field with number 15 declared more than once in CreateRequest
+[2022-11-06 19:22:00 +0100] [48396] [INFO] Worker exiting (pid: 48396)
+[2022-11-06 19:22:00 +0100] [48394] [INFO] Shutting down: Master
+[2022-11-06 19:22:00 +0100] [48394] [INFO] Reason: Worker failed to boot.
+[2022-11-06 19:23:14 +0100] [48440] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 19:23:14 +0100] [48440] [INFO] Listening at: http://127.0.0.1:8000 (48440)
+[2022-11-06 19:23:14 +0100] [48440] [INFO] Using worker: sync
+[2022-11-06 19:23:14 +0100] [48442] [INFO] Booting worker with pid: 48442
+[2022-11-06 19:23:14 +0100] [48442] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 25, in <module>
+    __import__(modname)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/movies.py", line 11, in <module>
+    class CreateRequest(messages.Message):
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/wsgi/protorpc/messages.py", line 611, in __new__
+    raise DuplicateNumberError(
+backend.wsgi.protorpc.messages.DuplicateNumberError: Field with number 5 declared more than once in CreateRequest
+[2022-11-06 19:23:14 +0100] [48442] [INFO] Worker exiting (pid: 48442)
+[2022-11-06 19:23:14 +0100] [48440] [INFO] Shutting down: Master
+[2022-11-06 19:23:14 +0100] [48440] [INFO] Reason: Worker failed to boot.
+[2022-11-06 19:30:15 +0100] [48702] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 19:30:15 +0100] [48702] [INFO] Listening at: http://127.0.0.1:8000 (48702)
+[2022-11-06 19:30:15 +0100] [48702] [INFO] Using worker: sync
+[2022-11-06 19:30:15 +0100] [48704] [INFO] Booting worker with pid: 48704
+[2022-11-06 19:32:22 +0100] [48704] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/data.py modified
+[2022-11-06 19:32:23 +0100] [48704] [INFO] Worker exiting (pid: 48704)
+[2022-11-06 19:32:23 +0100] [48772] [INFO] Booting worker with pid: 48772
+[2022-11-06 19:32:26 +0100] [48702] [INFO] Handling signal: int
+[2022-11-06 19:32:26 +0100] [48772] [INFO] Worker exiting (pid: 48772)
+[2022-11-06 19:32:26 +0100] [48702] [INFO] Shutting down: Master
+[2022-11-06 20:42:06 +0100] [51197] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 20:42:06 +0100] [51197] [INFO] Listening at: http://127.0.0.1:8000 (51197)
+[2022-11-06 20:42:06 +0100] [51197] [INFO] Using worker: sync
+[2022-11-06 20:42:06 +0100] [51199] [INFO] Booting worker with pid: 51199
+[2022-11-06 20:42:33 +0100] [51199] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 13, in <module>
+    poster=item['poster']
+KeyError: 'poster'
+[2022-11-06 20:42:33 +0100] [51199] [INFO] Worker exiting (pid: 51199)
+[2022-11-06 20:42:33 +0100] [51197] [INFO] Shutting down: Master
+[2022-11-06 20:42:33 +0100] [51197] [INFO] Reason: Worker failed to boot.
+[2022-11-06 20:44:03 +0100] [51273] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 20:44:03 +0100] [51273] [INFO] Listening at: http://127.0.0.1:8000 (51273)
+[2022-11-06 20:44:03 +0100] [51273] [INFO] Using worker: sync
+[2022-11-06 20:44:03 +0100] [51275] [INFO] Booting worker with pid: 51275
+[2022-11-06 20:44:21 +0100] [51275] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/gunicorn/__init__.py", line 12, in <module>
+    from backend.api import application as api_application
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/__init__.py", line 5, in <module>
+    from .api import app as flaskapp
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py", line 17, in <module>
+    result = movies.Movie_list.create(Title=title, Year=year, poster=poster, imdbID=imdbID, Type=type)
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/movies.py", line 25, in create
+    entity = cls(
+  File "/Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/movies.py", line 20, in __init__
+    super(Movie_list, self).__init__(*args, **kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/google/cloud/ndb/model.py", line 4892, in __init__
+    self._set_attributes(kwargs)
+  File "/Users/parthishali/opt/anaconda3/envs/britevenv/lib/python3.8/site-packages/google/cloud/ndb/model.py", line 5029, in _set_attributes
+    prop = getattr(cls, name)
+AttributeError: type object 'Movie_list' has no attribute 'poster'
+[2022-11-06 20:44:21 +0100] [51275] [INFO] Worker exiting (pid: 51275)
+[2022-11-06 20:44:21 +0100] [51273] [INFO] Shutting down: Master
+[2022-11-06 20:44:21 +0100] [51273] [INFO] Reason: Worker failed to boot.
+[2022-11-07 20:32:24 +0100] [67332] [INFO] Starting gunicorn 20.1.0
+[2022-11-07 20:32:24 +0100] [67332] [INFO] Listening at: http://127.0.0.1:8000 (67332)
+[2022-11-07 20:32:24 +0100] [67332] [INFO] Using worker: sync
+[2022-11-07 20:32:24 +0100] [67340] [INFO] Booting worker with pid: 67340
+[2022-11-07 20:32:51 +0100] [67340] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py modified
+[2022-11-07 20:32:51 +0100] [67340] [INFO] Worker exiting (pid: 67340)
+[2022-11-07 20:32:51 +0100] [67379] [INFO] Booting worker with pid: 67379
+[2022-11-07 20:32:52 +0100] [67379] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/api/api.py modified
+[2022-11-07 20:32:52 +0100] [67379] [INFO] Worker exiting (pid: 67379)
+[2022-11-07 20:32:53 +0100] [67385] [INFO] Booting worker with pid: 67385
+[2022-11-07 20:36:52 +0100] [67385] [INFO] Worker reloading: /Users/parthishali/Documents/brite payment/abonea-python-test-47b7ccf0e339/backend/movies.py modified
+[2022-11-07 20:36:52 +0100] [67385] [INFO] Worker exiting (pid: 67385)
+[2022-11-07 20:36:52 +0100] [67521] [INFO] Booting worker with pid: 67521
+[2022-11-07 20:37:43 +0100] [67332] [INFO] Handling signal: int
+[2022-11-07 20:37:43 +0100] [67521] [INFO] Worker exiting (pid: 67521)
+[2022-11-07 20:37:43 +0100] [67332] [INFO] Shutting down: Master
