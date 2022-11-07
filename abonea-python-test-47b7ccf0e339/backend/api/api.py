@@ -31,7 +31,7 @@ class api:
     def Movie_operation(self):
         if request.method == 'POST':
             data = request.args
-            return Movies.create(request)     
+            return Movies.get(request)     
 
     @app.route('/api/movies/add_movies', methods=['GET','POST'])
     def Movie_operation(self):
@@ -43,7 +43,7 @@ class api:
     def Movie_operation(self):
         if request.method == 'POST':
             data = request.args
-            return Movies.Add(request)
+            return Movies.Delete_movie(request)
 
     @app.route('api/movies/movie_title', methods=['GET'])
     def Get_movie_from_title(movie_title):
